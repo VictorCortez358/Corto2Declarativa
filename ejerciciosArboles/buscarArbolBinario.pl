@@ -13,12 +13,14 @@ buscarNodo(Dato,[_,Dato, _]):-
 
 % Caso base 3: si no se encuentra el dato en el nodo raiz
 % se busca en el subarbol izquierdo
+
 buscarNodo(Dato,[ArbolIzq, Nodo, _]):-
     <(Dato, Nodo),
     buscarNodo(Dato, ArbolIzq).
 
 % Caso base 4: si no se encuentra el dato en el nodo raiz
 % se busca en el subarbol derecho
+
 buscarNodo(Dato,[_, Nodo, ArbolDer]):-
     >(Dato, Nodo),
     buscarNodo(Dato, ArbolDer).

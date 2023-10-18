@@ -5,7 +5,7 @@ d(x, C, 0):- number(C), !.
 d(x, x, 1):- !.
 
 % Derivada de x a la N:
-%d(x, x^N, N*x^N1):- number(N), is(N1, -(N, 1)), !.
+d(x, x^N, N*x^N1):- number(N), is(N1, -(N, 1)), !.
 
 % Derivada de una constante por x:
 d(x, C*x, C):- number(C), !.
